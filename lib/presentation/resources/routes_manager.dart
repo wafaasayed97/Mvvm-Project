@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mvvm_project/presentation/resources/strings_manager.dart';
 
 import '../forgot_password/forgot_password_view.dart';
 import '../login/login_view.dart';
@@ -41,10 +42,14 @@ class RouteGenerator{
     return MaterialPageRoute(
         builder: (context) => Scaffold(
           appBar: AppBar(
-            title: const Text("No Route Found"), //TODO: change this to String Manager
+            title: const Text(
+              AddingStrings.noRouteFound,
+            ),
           ),
           body: const Center(
-            child: Text('No Route Found'),//TODO: change this to String Manager
+            child: Text(
+              AddingStrings.noRouteFound,
+            ),
           ),
         ));
   }
